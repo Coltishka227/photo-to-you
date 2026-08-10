@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Портфолио — PHOTO IN YOU, Vika photographer.">
+<meta name="theme-color" content="#26382f">
+<meta property="og:title" content="Портфолио — PHOTO IN YOU">
+<meta property="og:description" content="Красота в глазах смотрящего.">
+<meta property="og:type" content="website">
+<title>Портфолио — PHOTO IN YOU</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header solid">
+<a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a>
+<nav class="navigation"><a href="index.html" class="">Главная</a>
+<a href="portfolio.html" class="active">Портфолио</a>
+<a href="about.html" class="">Обо мне</a>
+<a href="services.html" class="">Услуги</a>
+<a href="booking.html" class="">Запись</a>
+<a href="reviews.html" class="">Отзывы</a>
+<a href="contacts.html" class="">Контакты</a></nav>
+<button class="menu-button" id="menuButton" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mobile-menu" id="mobileMenu"><nav><a href="index.html">Главная</a>
+<a href="portfolio.html">Портфолио</a>
+<a href="about.html">Обо мне</a>
+<a href="services.html">Услуги</a>
+<a href="booking.html">Запись</a>
+<a href="reviews.html">Отзывы</a>
+<a href="contacts.html">Контакты</a></nav></div>
+
+<main>
+<section class="section page-intro">
+<div class="section-number">PORTFOLIO — 01</div>
+<p class="small-title">VIKA / PHOTOGRAPHER</p>
+<h1 class="page-title">Мои<br><i>работы.</i></h1>
+<p class="page-lead">Фотографии о людях, эмоциях, свете и моментах, которые хочется сохранить.</p>
+</section>
+<section class="portfolio-filters">
+<button class="portfolio-filter active" data-filter="all">Все работы</button>
+<button class="portfolio-filter" data-filter="portrait">Портрет</button>
+<button class="portfolio-filter" data-filter="studio">Студия</button>
+<button class="portfolio-filter" data-filter="street">Улица</button>
+<button class="portfolio-filter" data-filter="creative">Творческие проекты</button>
+</section>
+<section class="section" style="padding-top:50px">
+<div class="portfolio-masonry">
+<figure class="portfolio-item" data-category="portrait"><button class="portfolio-image-button" data-image="images/portfolio/01.jpg"><img src="images/portfolio/01.jpg" alt="Портретная фотография" loading="eager"></button><figcaption><span>01</span><strong>Портрет</strong></figcaption></figure>
+<figure class="portfolio-item" data-category="studio"><button class="portfolio-image-button" data-image="images/portfolio/02.jpg"><img src="images/portfolio/02.jpg" alt="Студийная фотография" loading="lazy"></button><figcaption><span>02</span><strong>Студия</strong></figcaption></figure>
+<figure class="portfolio-item" data-category="street"><button class="portfolio-image-button" data-image="images/portfolio/03.jpg"><img src="images/portfolio/03.jpg" alt="Уличная фотография" loading="lazy"></button><figcaption><span>03</span><strong>Улица</strong></figcaption></figure>
+<figure class="portfolio-item" data-category="creative"><button class="portfolio-image-button" data-image="images/portfolio/04.jpg"><img src="images/portfolio/04.jpg" alt="Творческий проект" loading="lazy"></button><figcaption><span>04</span><strong>Творческий проект</strong></figcaption></figure>
+<figure class="portfolio-item" data-category="portrait"><button class="portfolio-image-button" data-image="images/portfolio/05.jpg"><img src="images/portfolio/05.jpg" alt="Портретная фотография" loading="lazy"></button><figcaption><span>05</span><strong>Портрет</strong></figcaption></figure>
+<figure class="portfolio-item" data-category="creative"><button class="portfolio-image-button" data-image="images/portfolio/06.jpg"><img src="images/portfolio/06.jpg" alt="Творческая фотография" loading="lazy"></button><figcaption><span>06</span><strong>Творческий проект</strong></figcaption></figure>
+</div>
+</section>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button id="lightboxClose" class="lightbox-close" aria-label="Закрыть">×</button><button id="lightboxPrev" class="lightbox-arrow prev" aria-label="Предыдущая">←</button><img id="lightboxImage" src="" alt="Фотография из портфолио"><button id="lightboxNext" class="lightbox-arrow next" aria-label="Следующая">→</button></div>
+<section class="quote"><p class="small-title">PHOTO IN YOU</p><h2>Красота<br><i>в деталях.</i></h2></section>
+<section class="final-cta"><div class="cta-overlay"></div><div class="cta-content"><p class="small-title">YOUR STORY</p><h2>Хотите<br><i>так же?</i></h2><a href="booking.html" class="button button-light">Записаться <span>↗</span></a></div></section>
+</main>
+
+<footer class="footer">
+<div><a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a><p>Vika — photographer</p></div>
+<div><p>«Красота в глазах смотрящего»</p><p>© 2026 PHOTO IN YOU</p></div>
+<div class="footer-links"><a href="https://instagram.com/photo.in.you" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/Vikysa348" target="_blank" rel="noopener">Telegram</a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Запись — PHOTO IN YOU, Vika photographer.">
+<meta name="theme-color" content="#26382f">
+<meta property="og:title" content="Запись — PHOTO IN YOU">
+<meta property="og:description" content="Красота в глазах смотрящего.">
+<meta property="og:type" content="website">
+<title>Запись — PHOTO IN YOU</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header solid">
+<a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a>
+<nav class="navigation"><a href="index.html" class="">Главная</a>
+<a href="portfolio.html" class="">Портфолио</a>
+<a href="about.html" class="">Обо мне</a>
+<a href="services.html" class="">Услуги</a>
+<a href="booking.html" class="active">Запись</a>
+<a href="reviews.html" class="">Отзывы</a>
+<a href="contacts.html" class="">Контакты</a></nav>
+<button class="menu-button" id="menuButton" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mobile-menu" id="mobileMenu"><nav><a href="index.html">Главная</a>
+<a href="portfolio.html">Портфолио</a>
+<a href="about.html">Обо мне</a>
+<a href="services.html">Услуги</a>
+<a href="booking.html">Запись</a>
+<a href="reviews.html">Отзывы</a>
+<a href="contacts.html">Контакты</a></nav></div>
+
+<main><section class="section page-intro"><div class="section-number">BOOKING — 01</div><p class="small-title">PHOTO IN YOU</p><h1 class="page-title">Запись на<br><i>съёмку.</i></h1></section>
+<section class="section"><div class="booking-layout"><div class="booking-copy"><p class="small-title">VIKA / PHOTOGRAPHER</p><h2>Расскажите<br><i>о вашей идее.</i></h2><p>Заполните форму — сейчас она работает как интерфейс заявки. Подключение Telegram, email или базы данных можно добавить позже.</p></div>
+<form class="form" id="bookingForm">
+<div class="field"><label for="name">Имя</label><input id="name" name="name" required></div>
+<div class="field"><label for="contact">Способ связи</label><select id="contact" name="contact" required><option value="">Выберите</option><option>Telegram</option><option>Телефон</option><option>Instagram</option></select></div>
+<div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel"></div>
+<div class="field"><label for="telegram">Telegram</label><input id="telegram" name="telegram" placeholder="@username"></div>
+<div class="field"><label for="type">Вид съёмки</label><select id="type" name="type" required><option value="">Выберите</option><option>Портретная</option><option>Студийная</option><option>Уличная</option><option>Индивидуальная</option><option>Творческий проект</option></select></div>
+<div class="field"><label for="date">Примерная дата</label><input id="date" name="date" type="date"></div>
+<div class="field"><label for="message">Сообщение</label><textarea id="message" name="message" placeholder="Расскажите немного о съёмке"></textarea></div>
+<button class="button" type="submit">Отправить заявку <span>↗</span></button><div class="form-message" id="formMessage"></div>
+</form></div></section></main>
+
+<footer class="footer">
+<div><a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a><p>Vika — photographer</p></div>
+<div><p>«Красота в глазах смотрящего»</p><p>© 2026 PHOTO IN YOU</p></div>
+<div class="footer-links"><a href="https://instagram.com/photo.in.you" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/Vikysa348" target="_blank" rel="noopener">Telegram</a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
