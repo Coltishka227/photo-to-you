@@ -3755,3 +3755,770 @@ img{max-width:100%}
         border-radius: 0 0 22px 22px;
     }
 }
+
+/* =========================================================
+   MOBILE VERSION — ALL PAGES
+   PHOTO IN YOU
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       ОБЩИЕ НАСТРОЙКИ
+       ----------------------------------------------------- */
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+    /* -----------------------------------------------------
+       ШАПКА
+       ----------------------------------------------------- */
+
+    .site-header,
+    .about-header {
+        position: relative;
+        width: 100%;
+        min-height: 64px;
+
+        padding: 16px 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+
+        z-index: 1000;
+    }
+
+    .logo,
+    .about-logo {
+        font-size: 13px;
+        letter-spacing: .14em;
+        white-space: nowrap;
+    }
+
+    /* Обычная навигация на телефоне скрыта */
+    .navigation,
+    .about-navigation {
+        display: none;
+    }
+
+    /* Кнопка меню */
+    .menu-button {
+        display: block !important;
+
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+        margin: 0;
+
+        border: 0;
+        background: transparent;
+
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .menu-button span {
+        width: 23px;
+        height: 1px;
+
+        margin: 6px auto;
+
+        display: block;
+    }
+
+
+    /* -----------------------------------------------------
+       HERO — ГЛАВНАЯ
+       ----------------------------------------------------- */
+
+    .home-hero {
+        min-height: calc(100svh - 64px);
+        height: calc(100svh - 64px);
+
+        position: relative;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero-content {
+        left: 0;
+        right: 0;
+
+        padding:
+            0
+            24px
+            80px;
+
+        box-sizing: border-box;
+    }
+
+    .hero-content .small-title {
+        font-size: 9px;
+        letter-spacing: .14em;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(58px, 18vw, 100px);
+        line-height: .78;
+
+        letter-spacing: -.045em;
+
+        margin: 18px 0;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+        line-height: 1.3;
+
+        margin: 20px 0;
+    }
+
+    .button {
+        max-width: 100%;
+
+        padding: 13px 16px;
+
+        font-size: 9px;
+
+        gap: 20px;
+    }
+
+    .hero-bottom {
+        left: 24px;
+        right: 24px;
+        bottom: 20px;
+
+        font-size: 8px;
+    }
+
+    .hero-bottom span:last-child {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------------
+       ОБЩИЕ СЕКЦИИ
+       ----------------------------------------------------- */
+
+    .section {
+        padding: 70px 20px;
+    }
+
+    .section-number,
+    .home-section-number {
+        margin-bottom: 28px;
+
+        font-size: 9px;
+        letter-spacing: .13em;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME — ABOUT
+       ----------------------------------------------------- */
+
+    .home-about {
+        padding: 70px 20px;
+    }
+
+    .home-about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .home-about-photo {
+        width: 100%;
+        max-height: 420px;
+
+        overflow: hidden;
+    }
+
+    .home-about-photo img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+    }
+
+    .home-about-content {
+        width: 100%;
+    }
+
+    .home-about-content h2 {
+        font-size: clamp(42px, 13vw, 65px);
+        line-height: .95;
+
+        margin-bottom: 25px;
+    }
+
+    .home-about-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME — ИЗБРАННЫЕ РАБОТЫ
+       ----------------------------------------------------- */
+
+    .home-portfolio {
+        padding: 70px 20px;
+    }
+
+    .home-section-header {
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .home-photo-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+    }
+
+    .home-photo-card,
+    .home-photo-large,
+    .home-photo-wide {
+        width: 100%;
+        height: auto;
+    }
+
+    .home-photo-card img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME — НАПРАВЛЕНИЯ
+       ----------------------------------------------------- */
+
+    .home-directions {
+        padding: 70px 20px;
+    }
+
+    .home-direction-list {
+        width: 100%;
+    }
+
+    .home-direction-item {
+        display: grid;
+
+        grid-template-columns: 35px 1fr 25px;
+
+        gap: 10px;
+
+        padding: 18px 0;
+    }
+
+    .home-direction-item strong {
+        font-size: 17px;
+    }
+
+
+    /* -----------------------------------------------------
+       PORTFOLIO
+       ----------------------------------------------------- */
+
+    .photo-grid {
+        grid-template-columns: 1fr !important;
+
+        gap: 28px !important;
+    }
+
+    .photo-card,
+    .photo-large,
+    .photo-tall,
+    .photo-wide {
+        width: 100% !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        aspect-ratio: auto !important;
+    }
+
+    .photo-card img {
+        width: 100% !important;
+        height: auto !important;
+
+        aspect-ratio: auto !important;
+        object-fit: initial !important;
+    }
+
+    .photo-card span {
+        font-size: 10px;
+        margin-top: 9px;
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT — НОВЫЙ ДИЗАЙН
+       ----------------------------------------------------- */
+
+    .about-page {
+        overflow-x: hidden;
+    }
+
+    .about-intro-card {
+        display: grid;
+
+        grid-template-columns: 1fr !important;
+
+        width: auto;
+        max-width: none;
+
+        margin: 25px 18px 50px !important;
+
+        border-radius: 18px;
+
+        overflow: hidden;
+    }
+
+    .about-intro-text {
+        padding: 35px 24px !important;
+
+        order: 1;
+    }
+
+    .about-intro-text .about-script {
+        font-size: 38px !important;
+
+        line-height: 1.1;
+
+        margin-bottom: 18px;
+    }
+
+    .about-intro-text .about-description {
+        font-size: 17px !important;
+
+        line-height: 1.55;
+
+        max-width: none;
+    }
+
+    .about-main-photo {
+        order: 2;
+
+        width: 100%;
+
+        min-height: 280px !important;
+
+        border-radius: 0 0 18px 18px !important;
+    }
+
+    .about-main-photo img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT — ЛИЧНАЯ ИНФОРМАЦИЯ
+       ----------------------------------------------------- */
+
+    .about-personal {
+        padding: 50px 20px;
+    }
+
+    .about-personal-title {
+        margin-bottom: 25px;
+    }
+
+    .about-personal-title .about-script {
+        font-size: 38px;
+    }
+
+    .about-personal-content {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .about-personal-content p {
+        font-size: 16px;
+        line-height: 1.6;
+
+        margin: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT — PHILOSOPHY
+       ----------------------------------------------------- */
+
+    .about-philosophy {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        margin: 40px 20px;
+    }
+
+    .about-philosophy-photo {
+        width: 100%;
+    }
+
+    .about-philosophy-photo img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+    }
+
+    .about-philosophy-box {
+        padding: 30px 24px;
+    }
+
+    .about-philosophy-box p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT — ЦИТАТА
+       ----------------------------------------------------- */
+
+    .about-quote {
+        padding: 80px 20px;
+
+        text-align: center;
+    }
+
+    .about-quote h2 {
+        font-size: clamp(38px, 11vw, 60px);
+
+        line-height: .95;
+    }
+
+    .quote-text {
+        max-width: 100%;
+
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT — ФИНАЛ
+       ----------------------------------------------------- */
+
+    .about-final {
+        padding: 70px 20px;
+
+        text-align: center;
+    }
+
+    .about-final h2 {
+        font-size: clamp(40px, 12vw, 65px);
+
+        line-height: .95;
+    }
+
+    .about-button {
+        display: inline-flex;
+
+        max-width: 100%;
+
+        padding: 14px 18px;
+
+        font-size: 10px;
+    }
+
+
+    /* -----------------------------------------------------
+       SERVICES
+       ----------------------------------------------------- */
+
+    .services-page main,
+    .services-page .section,
+    .services-page section {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .services-page section {
+        padding: 65px 20px;
+    }
+
+    .services-page h1 {
+        font-size: clamp(42px, 13vw, 70px);
+
+        line-height: .95;
+    }
+
+    .services-page h2 {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .services-page p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .services-list,
+    .service-list,
+    .direction-list {
+        width: 100%;
+    }
+
+    .direction-list a {
+        grid-template-columns: 35px 1fr 25px;
+
+        gap: 10px;
+
+        padding: 18px 0;
+    }
+
+    .direction-list a strong {
+        font-size: 17px;
+    }
+
+
+    /* -----------------------------------------------------
+       BOOKING
+       ----------------------------------------------------- */
+
+    .booking-page main,
+    .booking-page section {
+        box-sizing: border-box;
+
+        width: 100%;
+    }
+
+    .booking-page section {
+        padding: 60px 20px;
+    }
+
+    .booking-page h1 {
+        font-size: clamp(42px, 13vw, 70px);
+
+        line-height: .95;
+    }
+
+    .booking-page h2 {
+        font-size: 30px;
+    }
+
+    .booking-page form {
+        width: 100%;
+    }
+
+    .booking-page input,
+    .booking-page textarea,
+    .booking-page select,
+    .booking-page button {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        font-size: 16px;
+    }
+
+    .booking-page textarea {
+        min-height: 140px;
+    }
+
+
+    /* -----------------------------------------------------
+       REVIEWS
+       ----------------------------------------------------- */
+
+    .reviews-page section {
+        padding: 60px 20px;
+    }
+
+    .reviews-page h1 {
+        font-size: clamp(42px, 13vw, 70px);
+    }
+
+    .reviews-page .reviews-grid,
+    .reviews-page .review-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .reviews-page .review-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .reviews-page .review-card img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+    }
+
+
+    /* -----------------------------------------------------
+       CONTACTS
+       ----------------------------------------------------- */
+
+    .contacts-page section {
+        padding: 60px 20px;
+    }
+
+    .contacts-page h1 {
+        font-size: clamp(42px, 13vw, 70px);
+
+        line-height: .95;
+    }
+
+    .contacts-page .contacts-grid,
+    .contacts-page .contact-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .contacts-page .contact-card {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 24px 20px;
+    }
+
+    .contacts-page iframe {
+        width: 100% !important;
+
+        max-width: 100%;
+
+        min-height: 280px;
+    }
+
+
+    /* -----------------------------------------------------
+       FOOTER
+       ----------------------------------------------------- */
+
+    footer,
+    .about-footer {
+        padding: 45px 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+    .footer-links,
+    .about-footer-links {
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .site-header,
+    .about-header {
+        padding: 14px 16px;
+    }
+
+    .logo,
+    .about-logo {
+        font-size: 11px;
+    }
+
+    .home-about,
+    .home-portfolio,
+    .home-directions,
+    .section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 70px;
+    }
+
+    .hero-content h1 {
+        font-size: 58px;
+    }
+
+    .about-intro-card {
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+    }
+
+    .about-intro-text {
+        padding: 28px 20px !important;
+    }
+
+    .about-intro-text .about-script {
+        font-size: 34px !important;
+    }
+
+    .about-intro-text .about-description {
+        font-size: 16px !important;
+    }
+
+    .about-main-photo {
+        min-height: 240px !important;
+    }
+}
