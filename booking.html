@@ -3,52 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Запись — PHOTO IN YOU, Vika photographer.">
+<meta name="description" content="Запись на фотосессию — PHOTO IN YOU, Vika photographer.">
 <meta name="theme-color" content="#26382f">
-<meta property="og:title" content="Запись — PHOTO IN YOU">
-<meta property="og:description" content="Красота в глазах смотрящего.">
-<meta property="og:type" content="website">
-<title>Запись — PHOTO IN YOU</title>
+<title>Запись на съёмку — PHOTO IN YOU</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="header solid">
-<a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a>
-<nav class="navigation"><a href="index.html" class="">Главная</a>
-<a href="portfolio.html" class="">Портфолио</a>
-<a href="about.html" class="">Обо мне</a>
-<a href="services.html" class="">Услуги</a>
-<a href="booking.html" class="active">Запись</a>
-<a href="reviews.html" class="">Отзывы</a>
-<a href="contacts.html" class="">Контакты</a></nav>
-<button class="menu-button" id="menuButton" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
-</header>
-<div class="mobile-menu" id="mobileMenu"><nav><a href="index.html">Главная</a>
-<a href="portfolio.html">Портфолио</a>
-<a href="about.html">Обо мне</a>
-<a href="services.html">Услуги</a>
-<a href="booking.html">Запись</a>
-<a href="reviews.html">Отзывы</a>
-<a href="contacts.html">Контакты</a></nav></div>
+<body class="booking-page">
 
-<main><section class="section page-intro"><div class="section-number">BOOKING — 01</div><p class="small-title">PHOTO IN YOU</p><h1 class="page-title">Запись на<br><i>съёмку.</i></h1></section>
-<section class="section"><div class="booking-layout"><div class="booking-copy"><p class="small-title">VIKA / PHOTOGRAPHER</p><h2>Расскажите<br><i>о вашей идее.</i></h2><p>Заполните форму — сейчас она работает как интерфейс заявки. Подключение Telegram, email или базы данных можно добавить позже.</p></div>
-<form class="form" id="bookingForm">
-<div class="field"><label for="name">Имя</label><input id="name" name="name" required></div>
-<div class="field"><label for="contact">Способ связи</label><select id="contact" name="contact" required><option value="">Выберите</option><option>Telegram</option><option>Телефон</option><option>Instagram</option></select></div>
-<div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel"></div>
-<div class="field"><label for="telegram">Telegram</label><input id="telegram" name="telegram" placeholder="@username"></div>
-<div class="field"><label for="type">Вид съёмки</label><select id="type" name="type" required><option value="">Выберите</option><option>Портретная</option><option>Студийная</option><option>Уличная</option><option>Индивидуальная</option><option>Творческий проект</option></select></div>
-<div class="field"><label for="date">Примерная дата</label><input id="date" name="date" type="date"></div>
-<div class="field"><label for="message">Сообщение</label><textarea id="message" name="message" placeholder="Расскажите немного о съёмке"></textarea></div>
-<button class="button" type="submit">Отправить заявку <span>↗</span></button><div class="form-message" id="formMessage"></div>
-</form></div></section></main>
+<header class="header solid">
+    <a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a>
+    <nav class="navigation">
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="about.html">Обо мне</a>
+        <a href="services.html">Услуги</a>
+        <a href="booking.html" class="active">Запись</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span>
+    </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="about.html">Обо мне</a>
+        <a href="services.html">Услуги</a>
+        <a href="booking.html">Запись</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+</div>
+
+<main>
+    <section class="booking-decorative">
+        <div class="booking-flower booking-flower-left">✿</div>
+        <div class="booking-leaf booking-leaf-top">❧</div>
+
+        <div class="booking-intro">
+            <p class="small-title">PHOTO IN YOU / BOOKING</p>
+            <h1>Давайте создадим<br><i>что-то красивое.</i></h1>
+            <p class="booking-intro-text">
+                Расскажите немного о своей идее — я свяжусь с вами,
+                чтобы обсудить детали съёмки, настроение и удобную дату.
+            </p>
+        </div>
+
+        <div class="booking-paper">
+            <div class="booking-paper-flower">❀</div>
+
+            <div class="booking-form-head">
+                <span>01</span>
+                <p>ВАША ЗАЯВКА</p>
+            </div>
+
+            <form class="form booking-form" id="bookingForm">
+                <div class="booking-form-grid">
+                    <div class="field booking-field">
+                        <label for="name">Ваше имя</label>
+                        <input id="name" name="name" type="text" placeholder="Как вас зовут?" required>
+                    </div>
+
+                    <div class="field booking-field">
+                        <label for="phone">Телефон</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+7 ..." required>
+                    </div>
+
+                    <div class="field booking-field">
+                        <label for="telegram">Telegram</label>
+                        <input id="telegram" name="telegram" type="text" placeholder="@username">
+                    </div>
+
+                    <div class="field booking-field">
+                        <label for="date">Желаемая дата</label>
+                        <input id="date" name="date" type="date">
+                    </div>
+
+                    <div class="field booking-field booking-field-wide">
+                        <label for="type">Какую съёмку вы хотите?</label>
+                        <select id="type" name="type" required>
+                            <option value="" selected disabled>Выберите вариант</option>
+                            <option>Портретная съёмка</option>
+                            <option>Студийная съёмка</option>
+                            <option>Уличная съёмка</option>
+                            <option>Индивидуальная съёмка</option>
+                            <option>Творческая съёмка</option>
+                        </select>
+                    </div>
+
+                    <div class="field booking-field booking-field-wide">
+                        <label for="message">Расскажите о вашей идее</label>
+                        <textarea id="message" name="message" placeholder="Например: хочу нежную съёмку с цветами..."></textarea>
+                    </div>
+                </div>
+
+                <div class="booking-bottom">
+                    <p>
+                        Отправляя заявку, вы пока ни к чему себя не привязываете.
+                        Сначала спокойно обсудим вашу идею.
+                    </p>
+                    <button type="submit" class="booking-submit">
+                        Отправить заявку <span>↗</span>
+                    </button>
+                </div>
+                <div id="formMessage" class="form-message" aria-live="polite"></div>
+            </form>
+        </div>
+
+        <div class="booking-note">
+            <span>02</span>
+            <div>
+                <p class="small-title">ПОСЛЕ ЗАЯВКИ</p>
+                <h2>Свяжусь с вами<br><i>и всё обсудим.</i></h2>
+            </div>
+            <div class="booking-note-flower">✾</div>
+        </div>
+    </section>
+</main>
 
 <footer class="footer">
-<div><a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a><p>Vika — photographer</p></div>
-<div><p>«Красота в глазах смотрящего»</p><p>© 2026 PHOTO IN YOU</p></div>
-<div class="footer-links"><a href="https://instagram.com/photo.in.you" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/Vikysa348" target="_blank" rel="noopener">Telegram</a></div>
+    <div>
+        <a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a>
+        <p>Vika — photographer</p>
+    </div>
+    <div>
+        <p>«Красота в глазах смотрящего»</p>
+        <p>© 2026 PHOTO IN YOU</p>
+    </div>
+    <div class="footer-links">
+        <a href="https://instagram.com/photo.in.you" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://t.me/Vikysa348" target="_blank" rel="noopener">Telegram</a>
+    </div>
 </footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>
