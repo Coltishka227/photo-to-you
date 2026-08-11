@@ -1,79 +1,409 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Контакты PHOTO IN YOU — Vika photographer.">
-<meta name="theme-color" content="#26382f">
-<title>Контакты — PHOTO IN YOU</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
-<header class="header solid">
-    <a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Контакты PHOTO IN YOU — Vika photographer. Запись на фотосессию в Петропавловске."
+    >
+
+    <meta name="theme-color" content="#eef4d9">
+
+    <title>Контакты — PHOTO IN YOU</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Marck+Script&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body class="contacts-page">
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header">
+
+    <a href="index.html" class="logo">
+        PHOTO <span>IN</span> YOU
+    </a>
+
     <nav class="navigation">
-        <a href="index.html">Главная</a>
-        <a href="portfolio.html">Портфолио</a>
-        <a href="about.html">Обо мне</a>
-        <a href="services.html">Услуги</a>
-        <a href="booking.html">Запись</a>
-        <a href="reviews.html">Отзывы</a>
-        <a href="contacts.html" class="active">Контакты</a>
+
+        <a href="index.html">
+            Главная
+        </a>
+
+        <a href="portfolio.html">
+            Портфолио
+        </a>
+
+        <a href="about.html">
+            Обо мне
+        </a>
+
+        <a href="services.html">
+            Услуги
+        </a>
+
+        <a href="booking.html">
+            Запись
+        </a>
+
+        <a href="reviews.html">
+            Отзывы
+        </a>
+
+        <a href="contacts.html" class="active">
+            Контакты
+        </a>
+
     </nav>
-    <button class="menu-button" id="menuButton" aria-label="Открыть меню" aria-expanded="false">
-        <span></span><span></span>
+
+    <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
     </button>
+
 </header>
 
-<div class="mobile-menu" id="mobileMenu">
-    <nav>
-        <a href="index.html">Главная</a><a href="portfolio.html">Портфолио</a>
-        <a href="about.html">Обо мне</a><a href="services.html">Услуги</a>
-        <a href="booking.html">Запись</a><a href="reviews.html">Отзывы</a>
-        <a href="contacts.html">Контакты</a>
-    </nav>
-</div>
 
-<main>
-<section class="section contact-section">
-    <div class="section-number">КОНТАКТЫ / PHOTO IN YOU</div>
+<!-- ================= MAIN ================= -->
 
-    <div class="contact-decorative">
-        <div class="contact-flower">✿</div>
-        <div class="contact-copy">
-            <p class="small-title">VIKA — PHOTOGRAPHER</p>
-            <h1>Буду рада<br><i>вашей истории.</i></h1>
-            <p>
-                Если хотите узнать о свободных датах, обсудить съёмку
-                или просто задать вопрос — напишите мне.
-            </p>
-            <a href="booking.html" class="button">Записаться <span>↗</span></a>
-        </div>
+<main class="contacts-main">
+
+
+    <!-- INTRO -->
+
+    <section class="contacts-intro">
+
+        <p class="contacts-label">
+            PHOTO IN YOU / CONTACTS
+        </p>
+
+        <h1>
+            Давайте
+            <i>поговорим.</i>
+        </h1>
+
+        <p class="contacts-subtitle">
+            Если вы хотите записаться на съёмку,
+            обсудить идею или просто задать вопрос —
+            напишите мне удобным способом.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACTS GRID -->
+
+    <section class="contacts-grid">
+
+
+        <!-- TELEGRAM -->
+
+        <a
+            href="https://t.me/Vikysa348"
+            target="_blank"
+            rel="noopener"
+            class="contact-card contact-main-card"
+        >
+
+            <span class="contact-number">
+                01
+            </span>
+
+            <div>
+
+                <p class="contact-type">
+                    TELEGRAM
+                </p>
+
+                <h2>
+                    @Vikysa348
+                </h2>
+
+                <p>
+                    Самый удобный способ связаться
+                    со мной и обсудить детали съёмки.
+                </p>
+
+            </div>
+
+            <span class="contact-arrow">
+                ↗
+            </span>
+
+        </a>
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+            href="https://instagram.com/photo.in.you"
+            target="_blank"
+            rel="noopener"
+            class="contact-card"
+        >
+
+            <span class="contact-number">
+                02
+            </span>
+
+            <div>
+
+                <p class="contact-type">
+                    INSTAGRAM
+                </p>
+
+                <h2>
+                    @photo.in.you
+                </h2>
+
+                <p>
+                    Портфолио, новые съёмки
+                    и фотографии.
+                </p>
+
+            </div>
+
+            <span class="contact-arrow">
+                ↗
+            </span>
+
+        </a>
+
+
+        <!-- LOCATION -->
 
         <div class="contact-card">
-            <p class="contact-card-title">КАК СВЯЗАТЬСЯ</p>
-            <a class="contact-big-link" href="https://t.me/Vikysa348" target="_blank" rel="noopener">
-                Telegram <span>↗</span>
-            </a>
-            <a class="contact-big-link" href="https://instagram.com/photo.in.you" target="_blank" rel="noopener">
-                Instagram <span>↗</span>
-            </a>
-            <div class="contact-row"><span>Телефон</span><strong>Укажите номер</strong></div>
-            <div class="contact-row"><span>Локация</span><strong>Укажите город</strong></div>
+
+            <span class="contact-number">
+                03
+            </span>
+
+            <div>
+
+                <p class="contact-type">
+                    ГОРОД
+                </p>
+
+                <h2>
+                    Петропавловск
+                </h2>
+
+                <p>
+                    Северо-Казахстанская область.
+                    Локация съёмки обсуждается
+                    индивидуально.
+                </p>
+
+            </div>
+
         </div>
-    </div>
-</section>
+
+
+        <!-- WORK -->
+
+        <div class="contact-card">
+
+            <span class="contact-number">
+                04
+            </span>
+
+            <div>
+
+                <p class="contact-type">
+                    СВЯЗЬ
+                </p>
+
+                <h2>
+                    Напишите мне
+                </h2>
+
+                <p>
+                    Обычно я отвечаю в течение дня.
+                    Если сообщение потерялось —
+                    напишите ещё раз, я обязательно отвечу.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW TO CONTACT -->
+
+    <section class="contacts-info">
+
+        <div class="contacts-info-title">
+
+            <p class="contacts-label">
+                КАК СВЯЗАТЬСЯ
+            </p>
+
+            <h2>
+                Что написать
+                <i>в сообщении?</i>
+            </h2>
+
+        </div>
+
+
+        <div class="contacts-info-list">
+
+            <div class="contacts-info-item">
+
+                <span>
+                    01
+                </span>
+
+                <p>
+                    Какой вид съёмки вы хотите:
+                    портрет, студия, улица,
+                    индивидуальная или творческая съёмка.
+                </p>
+
+            </div>
+
+
+            <div class="contacts-info-item">
+
+                <span>
+                    02
+                </span>
+
+                <p>
+                    Примерную желаемую дату
+                    и удобное время.
+                </p>
+
+            </div>
+
+
+            <div class="contacts-info-item">
+
+                <span>
+                    03
+                </span>
+
+                <p>
+                    Если уже есть идея, референсы
+                    или пример желаемого результата —
+                    можете сразу отправить их.
+                </p>
+
+            </div>
+
+
+            <div class="contacts-info-item">
+
+                <span>
+                    04
+                </span>
+
+                <p>
+                    Если пока не знаете, какую съёмку
+                    хотите — ничего страшного.
+                    Идею можно придумать вместе.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="contacts-cta">
+
+        <p class="contacts-label">
+            YOUR STORY
+        </p>
+
+        <h2>
+            Есть идея?
+            <br>
+            <i>Давайте создадим её.</i>
+        </h2>
+
+        <a
+            href="booking.html"
+            class="contacts-button"
+        >
+            Перейти к записи
+            <span>↗</span>
+        </a>
+
+    </section>
+
 </main>
 
-<footer class="footer">
-    <div><a href="index.html" class="logo">PHOTO <span>IN</span> YOU</a><p>Vika — photographer</p></div>
-    <div><p>«Красота в глазах смотрящего»</p><p>© 2026 PHOTO IN YOU</p></div>
-    <div class="footer-links">
-        <a href="https://instagram.com/photo.in.you" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://t.me/Vikysa348" target="_blank" rel="noopener">Telegram</a>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="contacts-footer">
+
+    <div>
+
+        <a href="index.html" class="logo">
+            PHOTO <span>IN</span> YOU
+        </a>
+
+        <p>
+            Vika — photographer
+        </p>
+
     </div>
+
+
+    <div class="contacts-footer-links">
+
+        <a
+            href="https://instagram.com/photo.in.you"
+            target="_blank"
+            rel="noopener"
+        >
+            Instagram
+        </a>
+
+        <a
+            href="https://t.me/Vikysa348"
+            target="_blank"
+            rel="noopener"
+        >
+            Telegram
+        </a>
+
+    </div>
+
+
+    <p>
+        © 2026 PHOTO IN YOU
+    </p>
+
 </footer>
+
+
 <script src="js/main.js"></script>
+
 </body>
 </html>
