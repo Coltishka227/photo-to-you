@@ -582,3 +582,3053 @@ img{max-width:100%}
  .contact-copy>p:not(.small-title){font-size:18px}
  .contact-big-link{font-size:27px}
 }
+
+/* =========================================================
+   PHOTO IN YOU — SERVICES PAGE
+   Decorative editorial style
+   ========================================================= */
+
+.services-page {
+    background: #f4eee3;
+    color: #26382f;
+}
+
+
+/* ================= HERO ================= */
+
+.services-hero {
+    position: relative;
+    min-height: 72vh;
+    padding: 150px 7vw 100px;
+    overflow: hidden;
+    background: #f4eee3;
+}
+
+.services-hero-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.services-title-wrap {
+    max-width: 850px;
+    margin-top: 70px;
+}
+
+.services-title-wrap h1 {
+    margin: 20px 0 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(64px, 8vw, 125px);
+    line-height: .88;
+    font-weight: 400;
+    letter-spacing: -4px;
+}
+
+.services-title-wrap h1 i {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.services-lead {
+    max-width: 470px;
+    margin-left: 9%;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #59635c;
+}
+
+.services-decoration {
+    position: absolute;
+    font-family: Georgia, serif;
+    pointer-events: none;
+    user-select: none;
+}
+
+.services-flower-one {
+    right: 8%;
+    top: 15%;
+    font-size: 150px;
+    color: #9b836b;
+    transform: rotate(18deg);
+    opacity: .45;
+}
+
+.services-flower-two {
+    right: 20%;
+    bottom: 7%;
+    font-size: 75px;
+    color: #c6a7a0;
+    transform: rotate(-20deg);
+    opacity: .55;
+}
+
+
+/* ================= SERVICES LIST ================= */
+
+.services-list-section {
+    position: relative;
+    padding: 110px 7vw 140px;
+    background: #26382f;
+    color: #f4eee3;
+}
+
+.services-section-heading {
+    max-width: 1250px;
+    margin: 0 auto 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.services-section-heading .section-number {
+    color: #d7cbbb;
+}
+
+.services-section-heading > p {
+    max-width: 330px;
+    margin: 0;
+    color: #bdc3bc;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.services-list {
+    max-width: 1250px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(244, 238, 227, .3);
+}
+
+.service-row {
+    position: relative;
+    min-height: 190px;
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 50px;
+    padding: 35px 15px;
+    border-bottom: 1px solid rgba(244, 238, 227, .3);
+    transition:
+        background .5s ease,
+        padding .5s ease;
+}
+
+.service-row:hover {
+    background: rgba(244, 238, 227, .055);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.service-row-number {
+    align-self: flex-start;
+    padding-top: 12px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    color: #b9a98f;
+}
+
+.service-row-content {
+    max-width: 700px;
+}
+
+.service-row-content h2 {
+    margin: 0 0 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 3.2vw, 52px);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.service-row-content p {
+    max-width: 570px;
+    margin: 0;
+    color: #c7cdc7;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.service-row-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    color: #f4eee3;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(244, 238, 227, .5);
+    padding-bottom: 7px;
+    transition: gap .35s ease, border-color .35s ease;
+}
+
+.service-row-link b {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.service-row-link:hover {
+    gap: 25px;
+    border-color: #f4eee3;
+}
+
+
+/* ================= PROCESS ================= */
+
+.services-process {
+    position: relative;
+    padding: 130px 7vw;
+    overflow: hidden;
+    background: #e7ded0;
+}
+
+.services-flower-three {
+    right: 6%;
+    top: 9%;
+    font-size: 130px;
+    color: #b78e8a;
+    opacity: .28;
+    transform: rotate(25deg);
+}
+
+.process-layout {
+    max-width: 1250px;
+    margin: 75px auto 0;
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 100px;
+}
+
+.process-title h2 {
+    margin: 20px 0 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 5vw, 78px);
+    font-weight: 400;
+    line-height: .95;
+    letter-spacing: -2px;
+}
+
+.process-title h2 i {
+    font-style: italic;
+}
+
+.process-title > p:last-child {
+    max-width: 390px;
+    color: #697169;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.process-list {
+    border-top: 1px solid rgba(38, 56, 47, .3);
+}
+
+.process-item {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 25px;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(38, 56, 47, .3);
+}
+
+.process-item > span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    color: #8a7762;
+}
+
+.process-item h3 {
+    margin: 0 0 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.process-item p {
+    max-width: 480px;
+    margin: 0;
+    color: #697169;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* ================= CTA ================= */
+
+.services-cta {
+    position: relative;
+    min-height: 570px;
+    padding: 100px 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background: #26382f;
+    color: #f4eee3;
+}
+
+.services-cta::before,
+.services-cta::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(244, 238, 227, .18);
+    border-radius: 50%;
+}
+
+.services-cta::before {
+    left: -130px;
+    top: -80px;
+}
+
+.services-cta::after {
+    right: -130px;
+    bottom: -100px;
+}
+
+.services-cta .small-title {
+    color: #c7bca9;
+}
+
+.services-cta h2 {
+    position: relative;
+    z-index: 2;
+    margin: 25px 0 40px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(52px, 7vw, 100px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -3px;
+}
+
+.services-cta h2 i {
+    font-style: italic;
+}
+
+.services-cta-decoration {
+    position: absolute;
+    right: 12%;
+    top: 15%;
+    font-family: Georgia, serif;
+    font-size: 100px;
+    color: #b78e8a;
+    opacity: .4;
+    transform: rotate(15deg);
+}
+
+.services-cta .button {
+    position: relative;
+    z-index: 3;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .services-hero {
+        min-height: auto;
+        padding: 120px 25px 90px;
+    }
+
+    .services-title-wrap {
+        margin-top: 50px;
+    }
+
+    .services-title-wrap h1 {
+        font-size: clamp(52px, 16vw, 82px);
+        letter-spacing: -2px;
+    }
+
+    .services-lead {
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .services-flower-one {
+        right: -20px;
+        top: 12%;
+        font-size: 100px;
+    }
+
+    .services-flower-two {
+        right: 10%;
+        bottom: 3%;
+        font-size: 55px;
+    }
+
+
+    .services-list-section {
+        padding: 80px 25px 100px;
+    }
+
+    .services-section-heading {
+        display: block;
+        margin-bottom: 45px;
+    }
+
+    .services-section-heading > p {
+        margin-top: 20px;
+    }
+
+    .service-row {
+        min-height: 0;
+        grid-template-columns: 42px 1fr;
+        gap: 15px;
+        padding: 30px 0;
+    }
+
+    .service-row:hover {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .service-row-number {
+        padding-top: 7px;
+    }
+
+    .service-row-content h2 {
+        font-size: 30px;
+        line-height: 1.05;
+    }
+
+    .service-row-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .service-row-link {
+        grid-column: 2;
+        justify-self: start;
+        margin-top: 10px;
+    }
+
+
+    .services-process {
+        padding: 90px 25px;
+    }
+
+    .process-layout {
+        display: block;
+        margin-top: 55px;
+    }
+
+    .process-title {
+        margin-bottom: 60px;
+    }
+
+    .process-title h2 {
+        font-size: 53px;
+    }
+
+    .process-item {
+        grid-template-columns: 40px 1fr;
+        gap: 15px;
+    }
+
+    .process-item h3 {
+        font-size: 24px;
+    }
+
+
+    .services-cta {
+        min-height: 480px;
+        padding: 80px 25px;
+    }
+
+    .services-cta h2 {
+        font-size: 54px;
+        letter-spacing: -2px;
+    }
+
+    .services-cta-decoration {
+        right: 5%;
+        top: 8%;
+        font-size: 70px;
+    }
+
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 420px) {
+
+    .services-hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .services-list-section,
+    .services-process {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .services-title-wrap h1 {
+        font-size: 49px;
+    }
+
+    .service-row-content h2 {
+        font-size: 27px;
+    }
+
+    .process-title h2 {
+        font-size: 45px;
+    }
+
+    .services-cta h2 {
+        font-size: 46px;
+    }
+
+}
+
+/* =========================================================
+   PHOTO IN YOU — HOME PAGE REDESIGN
+   ========================================================= */
+
+.home-page {
+    background: #f7f3dc;
+    color: #30472e;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.home-hero {
+    position: relative;
+    height: 100vh;
+    min-height: 650px;
+    overflow: hidden;
+    color: #f7f3dc;
+}
+
+.home-hero .hero-image {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.home-hero .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-hero .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(25, 38, 29, .68),
+            rgba(25, 38, 29, .18)
+        );
+}
+
+.home-hero .hero-content {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 850px;
+    z-index: 2;
+}
+
+.home-hero .hero-content h1 {
+    margin: 20px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(65px, 10vw, 150px);
+    line-height: .82;
+    font-weight: 400;
+    letter-spacing: -5px;
+}
+
+.home-hero .hero-content h1 i {
+    font-style: italic;
+}
+
+.home-hero .hero-subtitle {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.home-hero .hero-bottom {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+.home-section-number {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7a806f;
+}
+
+.home-text-link {
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 6px;
+    font-size: 13px;
+}
+
+.home-text-link span {
+    transition: transform .3s ease;
+}
+
+.home-text-link:hover span {
+    transform: translate(4px, -4px);
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.home-about {
+    position: relative;
+    padding: 130px 7vw;
+    background: #f7f3dc;
+}
+
+.home-about-grid {
+    max-width: 1250px;
+    margin: 70px auto 0;
+    display: grid;
+    grid-template-columns: .85fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.home-about-photo {
+    width: 100%;
+    max-width: 470px;
+}
+
+.home-about-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.home-about-content {
+    max-width: 570px;
+}
+
+.home-about-content h2 {
+    margin: 20px 0 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(55px, 6vw, 90px);
+    line-height: .9;
+    font-weight: 400;
+}
+
+.home-about-content h2 i {
+    font-style: italic;
+}
+
+.home-about-content > p {
+    max-width: 500px;
+    color: #626b60;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PORTFOLIO
+   ========================================================= */
+
+.home-portfolio {
+    padding: 110px 7vw 140px;
+    background: #f7f3dc;
+}
+
+.home-section-header {
+    max-width: 1250px;
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-photo-grid {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 25px;
+}
+
+.home-photo-card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    min-height: 420px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.home-photo-large {
+    grid-row: span 2;
+    min-height: 700px;
+}
+
+.home-photo-wide {
+    grid-column: 1 / -1;
+    min-height: 430px;
+}
+
+.home-photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .8s ease;
+}
+
+.home-photo-card:hover img {
+    transform: scale(1.035);
+}
+
+.home-photo-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(20, 30, 22, .55),
+        transparent 45%
+    );
+}
+
+.home-photo-card span {
+    position: absolute;
+    left: 25px;
+    bottom: 22px;
+    z-index: 2;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   DIRECTIONS
+   ========================================================= */
+
+.home-directions {
+    padding: 120px 7vw 140px;
+    background: #30472e;
+    color: #f7f3dc;
+}
+
+.home-directions .home-section-number {
+    color: #c7c6a8;
+}
+
+.home-direction-list {
+    max-width: 1250px;
+    margin: 60px auto 0;
+    border-top: 1px solid rgba(247, 243, 220, .3);
+}
+
+.home-direction-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 40px;
+    align-items: center;
+    padding: 30px 10px;
+    border-bottom: 1px solid rgba(247, 243, 220, .3);
+    text-decoration: none;
+    color: inherit;
+    transition: padding .4s ease, background .4s ease;
+}
+
+.home-direction-item:hover {
+    padding-left: 25px;
+    background: rgba(255,255,255,.04);
+}
+
+.home-direction-item span {
+    color: #b6a98d;
+    font-size: 12px;
+}
+
+.home-direction-item strong {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 3.5vw, 48px);
+    font-weight: 400;
+}
+
+.home-direction-item i {
+    font-size: 22px;
+    font-style: normal;
+}
+
+
+/* =========================================================
+   HOW SHOOTING WORKS
+   ========================================================= */
+
+.shooting-process {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    min-height: 720px;
+    background: #2d5a29;
+    color: #f7f3dc;
+}
+
+.shooting-photo {
+    min-height: 650px;
+}
+
+.shooting-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.shooting-info {
+    position: relative;
+    padding: 75px 7vw 80px 45px;
+    overflow: hidden;
+}
+
+.shooting-script {
+    margin: 0 0 35px;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 1;
+    font-weight: 400;
+}
+
+.shooting-text {
+    max-width: 650px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.shooting-text p {
+    margin: 0 0 27px;
+}
+
+.shooting-flower {
+    position: absolute;
+    font-family: Georgia, serif;
+    color: #d39b9b;
+    opacity: .65;
+    pointer-events: none;
+}
+
+.flower-top {
+    right: 25px;
+    top: 20px;
+    font-size: 100px;
+    transform: rotate(15deg);
+}
+
+.flower-bottom {
+    right: 20px;
+    bottom: 20px;
+    font-size: 85px;
+    transform: rotate(-15deg);
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.home-faq {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 7vw 130px;
+    background: #f7fbdc;
+    color: #30472e;
+}
+
+.faq-header {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.faq-header h2 {
+    margin: 20px 0 70px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(55px, 7vw, 100px);
+    font-weight: 400;
+    line-height: .9;
+}
+
+.faq-header h2 i {
+    font-style: italic;
+}
+
+.faq-layout {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.faq-list {
+    position: relative;
+    z-index: 2;
+}
+
+.faq-item {
+    margin-bottom: 38px;
+}
+
+.faq-item h3 {
+    margin: 0 0 12px;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.faq-item p {
+    max-width: 550px;
+    margin: 0;
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #596456;
+}
+
+.faq-photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-photo-circle {
+    width: min(430px, 100%);
+    aspect-ratio: 1;
+    padding: 12px;
+    border: 2px solid #7b8a60;
+    border-radius: 50%;
+    background: #d9e1a7;
+}
+
+.faq-photo-circle img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.faq-leaf {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    font-size: 100px;
+    color: #687a52;
+    transform: rotate(-20deg);
+}
+
+.faq-decoration {
+    position: absolute;
+    pointer-events: none;
+}
+
+.faq-flower {
+    left: -35px;
+    top: 70px;
+    font-size: 130px;
+    color: #d39b9b;
+    opacity: .65;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.home-cta {
+    position: relative;
+    min-height: 560px;
+    padding: 100px 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background: #30472e;
+    color: #f7f3dc;
+}
+
+.home-cta h2 {
+    margin: 25px 0 40px;
+    font-family: Georgia, serif;
+    font-size: clamp(55px, 7vw, 100px);
+    font-weight: 400;
+    line-height: .9;
+}
+
+.home-cta h2 i {
+    font-style: italic;
+}
+
+.home-cta-flower {
+    position: absolute;
+    right: 12%;
+    top: 12%;
+    font-size: 100px;
+    color: #d39b9b;
+    opacity: .5;
+    transform: rotate(20deg);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .home-hero {
+        min-height: 700px;
+    }
+
+    .home-hero .hero-content {
+        left: 25px;
+        right: 25px;
+    }
+
+    .home-hero .hero-content h1 {
+        font-size: 68px;
+        letter-spacing: -3px;
+    }
+
+    .home-hero .hero-bottom {
+        left: 25px;
+        right: 25px;
+    }
+
+
+    .home-about {
+        padding: 80px 25px;
+    }
+
+    .home-about-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        margin-top: 45px;
+        align-items: stretch;
+    }
+
+    .home-about-photo {
+        max-width: 100%;
+    }
+
+
+    .home-portfolio {
+        padding: 80px 25px;
+    }
+
+    .home-section-header {
+        margin-bottom: 40px;
+    }
+
+    .home-photo-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .home-photo-card,
+    .home-photo-large,
+    .home-photo-wide {
+        min-height: 280px;
+    }
+
+    .home-photo-large {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        min-height: 450px;
+    }
+
+    .home-photo-wide {
+        grid-column: 1 / -1;
+    }
+
+
+    .home-directions {
+        padding: 80px 25px;
+    }
+
+    .home-direction-item {
+        grid-template-columns: 45px 1fr 25px;
+        padding: 25px 0;
+    }
+
+    .home-direction-item:hover {
+        padding-left: 0;
+    }
+
+    .home-direction-item strong {
+        font-size: 26px;
+    }
+
+
+    /* Съёмка */
+
+    .shooting-process {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shooting-photo {
+        min-height: 420px;
+        height: 55vh;
+    }
+
+    .shooting-info {
+        padding: 65px 25px 80px;
+    }
+
+    .shooting-script {
+        font-size: 50px;
+    }
+
+    .shooting-text {
+        font-size: 16px;
+    }
+
+
+    /* FAQ */
+
+    .home-faq {
+        padding: 80px 25px 100px;
+    }
+
+    .faq-header h2 {
+        font-size: 52px;
+        margin-bottom: 55px;
+    }
+
+    .faq-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .faq-photo {
+        width: 75%;
+        margin: auto;
+    }
+
+    .faq-flower {
+        left: -45px;
+        font-size: 90px;
+    }
+
+
+    /* CTA */
+
+    .home-cta {
+        min-height: 480px;
+        padding: 80px 25px;
+    }
+
+    .home-cta h2 {
+        font-size: 55px;
+    }
+
+    .home-cta-flower {
+        right: 3%;
+        top: 5%;
+        font-size: 70px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .home-hero .hero-content h1 {
+        font-size: 57px;
+    }
+
+    .home-hero .hero-subtitle {
+        font-size: 17px;
+    }
+
+    .home-section-header {
+        display: block;
+    }
+
+    .home-section-header .home-text-link {
+        margin-top: 20px;
+    }
+
+    .home-photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-photo-card,
+    .home-photo-large,
+    .home-photo-wide {
+        grid-column: auto;
+        min-height: 390px;
+    }
+
+    .home-direction-item strong {
+        font-size: 22px;
+    }
+
+    .shooting-script {
+        font-size: 43px;
+    }
+
+    .faq-header h2 {
+        font-size: 44px;
+    }
+
+    .faq-item h3 {
+        font-size: 27px;
+    }
+
+    .faq-photo {
+        width: 90%;
+    }
+
+}
+
+
+/* =========================================================
+   PHOTO IN YOU — ABOUT PAGE
+   Декоративный стиль
+   ========================================================= */
+
+.about-page {
+    margin: 0;
+    padding: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #526f9a 0%,
+            #7fa8c5 38%,
+            #eef2c8 72%,
+            #f5f5cf 100%
+        );
+
+    color: #28452c;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.about-header {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 22px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(250, 249, 220, 0.92);
+
+    border-bottom: 1px solid rgba(35, 75, 38, 0.15);
+
+    position: relative;
+    z-index: 20;
+}
+
+.about-logo {
+    color: #244d28;
+
+    text-decoration: none;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.about-logo span {
+    font-style: italic;
+}
+
+.about-navigation {
+    display: flex;
+    gap: 25px;
+}
+
+.about-navigation a {
+    color: #315437;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.about-navigation a:hover,
+.about-navigation a.active {
+    color: #122f17;
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.about-card {
+    width: min(900px, 92%);
+
+    margin: 35px auto 0;
+
+    position: relative;
+
+    background: #235827;
+
+    color: #f5f3d6;
+
+    border-radius: 0 0 18px 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(23, 45, 35, 0.18);
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.about-intro-card {
+    padding: 45px 55px 65px;
+}
+
+.about-intro-text {
+    max-width: 600px;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+.about-script {
+    margin: 0 0 20px;
+
+    font-family:
+        "Marck Script",
+        cursive;
+
+    font-size: clamp(34px, 5vw, 52px);
+
+    font-weight: 400;
+
+    color: #f2f1cf;
+
+    line-height: 1.05;
+}
+
+.about-description {
+    max-width: 650px;
+
+    margin: 0;
+
+    font-size: 20px;
+
+    line-height: 1.35;
+
+    color: #f0efd7;
+}
+
+
+/* =========================================================
+   MAIN PHOTO
+   ========================================================= */
+
+.about-main-photo {
+    width: 100%;
+
+    margin-top: 30px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.about-main-photo img {
+    display: block;
+
+    width: 100%;
+
+    max-height: 520px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 2px;
+}
+
+
+/* =========================================================
+   FLOWERS
+   ========================================================= */
+
+.about-flower {
+    position: absolute;
+
+    font-size: 90px;
+
+    color: #e7d9a7;
+
+    opacity: 0.85;
+
+    z-index: 4;
+
+    pointer-events: none;
+
+    line-height: 1;
+}
+
+.flower-one {
+    left: 10px;
+    bottom: 35px;
+
+    transform: rotate(-18deg);
+}
+
+.flower-two {
+    right: 15px;
+    bottom: 5px;
+
+    transform: rotate(20deg);
+
+    font-size: 75px;
+}
+
+
+/* =========================================================
+   PERSONAL
+   ========================================================= */
+
+.about-personal {
+    width: min(900px, 92%);
+
+    margin: 70px auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+.about-personal-title {
+    position: sticky;
+
+    top: 30px;
+}
+
+.about-personal-title .about-script {
+    color: #315f35;
+
+    font-size: 45px;
+}
+
+.about-line {
+    display: block;
+
+    width: 90px;
+    height: 2px;
+
+    background: #527852;
+
+    margin-top: 25px;
+}
+
+.about-personal-content {
+    padding-top: 10px;
+}
+
+.about-personal-content p {
+    margin: 0 0 28px;
+
+    font-size: 20px;
+
+    line-height: 1.45;
+
+    color: #304d32;
+}
+
+
+/* =========================================================
+   PHILOSOPHY
+   ========================================================= */
+
+.about-philosophy {
+    width: min(900px, 92%);
+
+    margin: 80px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: stretch;
+}
+
+.about-philosophy-photo {
+    min-height: 480px;
+}
+
+.about-philosophy-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-philosophy-box {
+    position: relative;
+
+    padding: 50px;
+
+    background: #e9efbd;
+
+    color: #315533;
+
+    overflow: hidden;
+}
+
+.about-philosophy-box .about-script {
+    color: #315f35;
+
+    font-size: 48px;
+}
+
+.about-philosophy-box p:not(.about-script) {
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    margin: 0 0 22px;
+}
+
+.about-small-flower {
+    position: absolute;
+
+    right: 20px;
+    bottom: 5px;
+
+    font-size: 95px;
+
+    color: #8c9b62;
+
+    opacity: 0.65;
+
+    transform: rotate(15deg);
+}
+
+
+/* =========================================================
+   QUOTE
+   ========================================================= */
+
+.about-quote {
+    width: min(800px, 88%);
+
+    margin: 100px auto;
+
+    padding: 65px 40px;
+
+    text-align: center;
+
+    background: rgba(243, 245, 205, 0.78);
+
+    border-radius: 25px;
+
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+.quote-decoration {
+    font-size: 70px;
+
+    color: #b17c75;
+
+    line-height: 0.8;
+
+    margin-bottom: 20px;
+}
+
+.about-quote .about-script {
+    color: #557153;
+
+    font-size: 34px;
+}
+
+.about-quote h2 {
+    margin: 10px 0 25px;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: clamp(34px, 5vw, 55px);
+
+    font-weight: 500;
+
+    line-height: 1.05;
+
+    color: #2e5133;
+}
+
+.quote-text {
+    max-width: 580px;
+
+    margin: auto;
+
+    font-size: 19px;
+
+    line-height: 1.5;
+
+    color: #526653;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.about-final {
+    width: min(900px, 92%);
+
+    margin: 0 auto 80px;
+
+    padding: 65px 50px;
+
+    box-sizing: border-box;
+
+    background: #245629;
+
+    color: #f5f2d3;
+
+    text-align: center;
+
+    border-radius: 20px;
+}
+
+.about-final .about-script {
+    font-size: 38px;
+}
+
+.about-final h2 {
+    margin: 15px 0 35px;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: clamp(38px, 6vw, 62px);
+
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+.about-final h2 i {
+    font-weight: 400;
+}
+
+.about-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 24px;
+
+    background: #eff0ca;
+
+    color: #294b2d;
+
+    text-decoration: none;
+
+    border-radius: 3px;
+
+    font-size: 17px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.about-button:hover {
+    transform: translateY(-3px);
+
+    background: #ffffff;
+}
+
+.about-button span {
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.about-footer {
+    padding: 40px 5%;
+
+    background: #173c1c;
+
+    color: #dfe4c0;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.about-footer .about-logo {
+    color: #e9ebc8;
+}
+
+.about-footer p {
+    margin: 8px 0 0;
+
+    font-size: 15px;
+}
+
+.about-footer-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.about-footer-links a {
+    color: #e3e7c7;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.about-footer-links a:hover {
+    text-decoration: underline;
+}
+
+.about-copyright {
+    text-align: right;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-header {
+        padding: 18px 20px;
+
+        display: block;
+
+        text-align: center;
+    }
+
+    .about-logo {
+        display: inline-block;
+
+        margin-bottom: 15px;
+    }
+
+    .about-navigation {
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 17px;
+    }
+
+    .about-navigation a {
+        font-size: 14px;
+    }
+
+
+    .about-card {
+        width: calc(100% - 20px);
+
+        margin-top: 15px;
+
+        border-radius: 0 0 15px 15px;
+    }
+
+    .about-intro-card {
+        padding: 35px 25px 50px;
+    }
+
+    .about-description {
+        font-size: 18px;
+    }
+
+    .about-main-photo img {
+        max-height: 380px;
+    }
+
+    .about-flower {
+        font-size: 65px;
+    }
+
+
+    .about-personal {
+        width: calc(100% - 40px);
+
+        margin: 55px auto;
+
+        display: block;
+    }
+
+    .about-personal-title {
+        position: static;
+
+        margin-bottom: 30px;
+    }
+
+    .about-personal-title .about-script {
+        font-size: 38px;
+    }
+
+    .about-personal-content p {
+        font-size: 18px;
+    }
+
+
+    .about-philosophy {
+        width: calc(100% - 20px);
+
+        display: flex;
+
+        flex-direction: column;
+
+        margin: 60px auto;
+    }
+
+    .about-philosophy-photo {
+        min-height: 360px;
+    }
+
+    .about-philosophy-box {
+        padding: 35px 25px 55px;
+    }
+
+    .about-philosophy-box .about-script {
+        font-size: 40px;
+    }
+
+    .about-philosophy-box p:not(.about-script) {
+        font-size: 18px;
+    }
+
+
+    .about-quote {
+        width: calc(100% - 30px);
+
+        padding: 50px 25px;
+
+        margin: 70px auto;
+    }
+
+    .about-quote h2 {
+        font-size: 39px;
+    }
+
+    .quote-text {
+        font-size: 18px;
+    }
+
+
+    .about-final {
+        width: calc(100% - 30px);
+
+        padding: 45px 25px;
+
+        margin-bottom: 50px;
+    }
+
+    .about-final h2 {
+        font-size: 42px;
+    }
+
+
+    .about-footer {
+        display: block;
+
+        text-align: center;
+
+        padding: 35px 20px;
+    }
+
+    .about-footer-links {
+        justify-content: center;
+
+        margin: 25px 0;
+    }
+
+    .about-copyright {
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .about-script {
+        font-size: 32px;
+    }
+
+    .about-description {
+        font-size: 17px;
+    }
+
+    .about-philosophy-photo {
+        min-height: 300px;
+    }
+
+    .about-final h2 {
+        font-size: 36px;
+    }
+
+}
+
+/* =========================================================
+   ABOUT — НЕЖНО-ЗЕЛЁНЫЙ ФОН
+   ========================================================= */
+
+.about-page {
+    background:
+        linear-gradient(
+            180deg,
+            #dfeccf 0%,
+            #e8f1d5 45%,
+            #f1f4d8 100%
+        );
+
+    color: #315236;
+}
+
+
+/* Верхний блок */
+
+.about-card {
+    background: #285c2c;
+}
+
+
+/* Текст на зелёном блоке */
+
+.about-description {
+    color: #f1f3d9;
+}
+
+
+/* Основной фон секций */
+
+.about-personal {
+    background: transparent;
+}
+
+.about-personal-content p {
+    color: #3b593d;
+}
+
+.about-personal-title .about-script {
+    color: #315d35;
+}
+
+
+/* Блок с фотографией */
+
+.about-philosophy-box {
+    background: #dce9bd;
+    color: #355737;
+}
+
+.about-philosophy-box .about-script {
+    color: #315b35;
+}
+
+
+/* Цитата */
+
+.about-quote {
+    background: #edf2cf;
+}
+
+.about-quote h2 {
+    color: #315837;
+}
+
+.quote-text {
+    color: #536853;
+}
+
+
+/* Финальный блок */
+
+.about-final {
+    background: #285c2c;
+}
+
+
+/* Кнопка */
+
+.about-button {
+    background: #edf1d0;
+    color: #315737;
+}
+
+.about-button:hover {
+    background: #f8f8df;
+}
+
+
+/* Header */
+
+.about-header {
+    background: rgba(237, 242, 211, 0.95);
+}
+
+.about-logo {
+    color: #315b36;
+}
+
+.about-navigation a {
+    color: #456347;
+}
+
+.about-navigation a:hover,
+.about-navigation a.active {
+    color: #234d28;
+}
+
+
+/* Footer */
+
+.about-footer {
+    background: #214b27;
+    color: #e5ebc9;
+}
+
+.about-footer .about-logo {
+    color: #edf1d2;
+}
+
+.about-footer-links a {
+    color: #e1e9c7;
+}
+
+/* =========================================================
+   ABOUT — СЕТКА 2 × 2
+   ========================================================= */
+
+.about-page {
+    background: #e5efd2;
+    color: #304f34;
+}
+
+
+/* Контейнер */
+
+.about-card,
+.about-personal,
+.about-philosophy,
+.about-quote,
+.about-final {
+    width: calc(100% - 60px);
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================================
+   ПЕРВЫЙ БЛОК — 2 КОЛОНКИ
+   ========================================================= */
+
+.about-card {
+    margin-top: 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: #285b2c;
+
+    border-radius: 16px;
+    overflow: hidden;
+
+    min-height: 420px;
+}
+
+.about-intro-card {
+    padding: 0;
+}
+
+.about-intro-text {
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: none;
+}
+
+.about-script {
+    font-size: 38px;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.about-main-photo {
+    height: 420px;
+}
+
+.about-main-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   СЕКЦИЯ «НЕМНОГО ОБО МНЕ»
+   2 × 2 БЛОКА
+   ========================================================= */
+
+.about-personal {
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+
+/* Заголовок */
+
+.about-personal-title {
+    position: static;
+
+    background: #285b2c;
+
+    padding: 35px;
+
+    min-height: 180px;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.about-personal-title .about-script {
+    color: #f0f2d5;
+    margin: 0;
+}
+
+
+/* Текстовые блоки */
+
+.about-personal-content {
+    display: contents;
+}
+
+.about-personal-content p {
+    margin: 0;
+
+    padding: 30px;
+
+    background: #d8e7b9;
+
+    border-radius: 15px;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    color: #365638;
+}
+
+
+/* Последний текст растягиваем */
+
+.about-personal-content p:last-child {
+    grid-column: 2;
+}
+
+.about-personal-title,
+.about-personal-content p {
+    min-height: 180px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   МОЙ ВЗГЛЯД — ТАКЖЕ 2 × 2
+   ========================================================= */
+
+.about-philosophy {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    margin-bottom: 45px;
+}
+
+.about-philosophy-photo {
+    height: 330px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.about-philosophy-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-philosophy-box {
+    min-height: 330px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    background: #d8e7b9;
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-philosophy-box .about-script {
+    color: #315a35;
+}
+
+.about-philosophy-box p:not(.about-script) {
+    font-size: 18px;
+    line-height: 1.4;
+
+    margin: 0 0 15px;
+}
+
+
+/* =========================================================
+   ЦИТАТА
+   ========================================================= */
+
+.about-quote {
+    margin-bottom: 45px;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background: #edf2d2;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.about-quote h2 {
+    font-size: 45px;
+    margin: 10px 0 20px;
+}
+
+.quote-text {
+    max-width: 650px;
+    margin: auto;
+
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.about-final {
+    margin-bottom: 60px;
+
+    padding: 35px 40px;
+
+    box-sizing: border-box;
+
+    background: #285b2c;
+
+    border-radius: 15px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.about-final h2 {
+    margin: 0;
+
+    font-size: 42px;
+}
+
+.about-final .about-button {
+    justify-self: end;
+}
+
+
+/* =========================================================
+   МОБИЛЬНАЯ ВЕРСИЯ
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-card,
+    .about-personal,
+    .about-philosophy {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-card {
+        width: calc(100% - 20px);
+    }
+
+    .about-main-photo {
+        height: 330px;
+    }
+
+
+    .about-personal {
+        width: calc(100% - 25px);
+    }
+
+    .about-personal-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about-personal-content p:last-child {
+        grid-column: auto;
+    }
+
+
+    .about-philosophy {
+        width: calc(100% - 20px);
+    }
+
+
+    .about-final {
+        width: calc(100% - 25px);
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .about-final .about-button {
+        justify-self: center;
+    }
+
+}
+
+
+/* ========================================
+   НОВАЯ ШАПКА INDEX
+======================================== */
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 86px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px;
+
+    z-index: 100;
+
+    color: #f7f3df;
+    background: transparent;
+}
+
+
+/* ЛОГО */
+
+.site-header .logo {
+    color: #f7f3df;
+    text-decoration: none;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    white-space: nowrap;
+}
+
+.site-header .logo span {
+    font-style: italic;
+}
+
+
+/* НАВИГАЦИЯ */
+
+.site-header .navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.site-header .navigation a {
+    position: relative;
+
+    color: #f7f3df;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    transition: opacity 0.3s ease;
+}
+
+.site-header .navigation a:hover {
+    opacity: 0.65;
+}
+
+
+/* ЛИНИЯ У АКТИВНОЙ СТРАНИЦЫ */
+
+.site-header .navigation a.active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 100%;
+    height: 1px;
+
+    background: #f7f3df;
+}
+
+
+/* КНОПКА МОБИЛЬНОГО МЕНЮ */
+
+.site-header .menu-button {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: 1px solid rgba(247, 243, 223, 0.7);
+    border-radius: 50%;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.site-header .menu-button span {
+    display: block;
+
+    width: 16px;
+    height: 1px;
+
+    margin: 4px auto;
+
+    background: #f7f3df;
+}
+
+
+/* ========================================
+   МОБИЛЬНАЯ ВЕРСИЯ
+======================================== */
+
+@media (max-width: 800px) {
+
+    .site-header {
+        height: 72px;
+        padding: 0 22px;
+    }
+
+    .site-header .logo {
+        font-size: 19px;
+    }
+
+    .site-header .navigation {
+        display: none;
+    }
+
+    .site-header .menu-button {
+        display: block;
+    }
+}
+
+
+/* ========================================
+   МАЛЕНЬКИЕ ТЕЛЕФОНЫ
+======================================== */
+
+@media (max-width: 480px) {
+
+    .site-header {
+        padding: 0 18px;
+    }
+
+    .site-header .logo {
+        font-size: 17px;
+        letter-spacing: 1.5px;
+    }
+
+}
+
+
+/* Шапка страницы услуг */
+.services-page .site-header {
+    position: relative;
+    background: #eef4d9;
+    color: #28552d;
+}
+
+.services-page .site-header .logo,
+.services-page .site-header .navigation a {
+    color: #28552d;
+}
+
+.services-page .site-header .navigation a.active::after {
+    background: #28552d;
+}
+
+.services-page .site-header .menu-button {
+    border-color: #28552d;
+}
+
+.services-page .site-header .menu-button span {
+    background: #28552d;
+}
+
+
+/* ========================================
+   CONTACTS PAGE
+======================================== */
+
+.contacts-page {
+    background: #eef4d9;
+    color: #28552d;
+}
+
+
+/* HEADER */
+
+.contacts-page .site-header {
+    position: relative;
+    background: #eef4d9;
+    color: #28552d;
+}
+
+.contacts-page .site-header .logo,
+.contacts-page .site-header .navigation a {
+    color: #28552d;
+}
+
+.contacts-page .site-header .navigation a.active::after {
+    background: #28552d;
+}
+
+.contacts-page .site-header .menu-button {
+    border-color: #28552d;
+}
+
+.contacts-page .site-header .menu-button span {
+    background: #28552d;
+}
+
+
+/* MAIN */
+
+.contacts-main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 80px 40px 0;
+}
+
+
+/* INTRO */
+
+.contacts-intro {
+    max-width: 850px;
+    padding: 70px 0 90px;
+}
+
+.contacts-label {
+    margin: 0 0 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    opacity: .65;
+}
+
+.contacts-intro h1 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(55px, 8vw, 105px);
+    font-weight: 500;
+    line-height: .85;
+}
+
+.contacts-intro h1 i {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+}
+
+.contacts-subtitle {
+    max-width: 600px;
+    margin-top: 35px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 21px;
+    line-height: 1.45;
+}
+
+
+/* CONTACT GRID */
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    margin-bottom: 120px;
+}
+
+
+/* CARD */
+
+.contact-card {
+    position: relative;
+
+    min-height: 260px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #dcebbd;
+
+    border-radius: 20px;
+
+    color: #28552d;
+    text-decoration: none;
+
+    transition:
+        transform .35s ease,
+        background .35s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    background: #d3e5ad;
+}
+
+.contact-main-card {
+    background: #285d2d;
+    color: #f4f2df;
+}
+
+.contact-main-card:hover {
+    background: #326b37;
+}
+
+
+/* NUMBER */
+
+.contact-number {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    opacity: .6;
+}
+
+
+/* TYPE */
+
+.contact-type {
+    margin: 0 0 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    opacity: .65;
+}
+
+
+/* TITLE */
+
+.contact-card h2 {
+    margin: 0 0 12px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 500;
+    line-height: 1;
+}
+
+.contact-card p {
+    max-width: 440px;
+
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+
+/* ARROW */
+
+.contact-arrow {
+    position: absolute;
+
+    right: 28px;
+    bottom: 25px;
+
+    font-size: 25px;
+}
+
+
+/* ========================================
+   HOW TO CONTACT
+======================================== */
+
+.contacts-info {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 80px;
+
+    padding: 80px 0;
+
+    border-top: 1px solid rgba(40, 85, 45, .2);
+}
+
+.contacts-info-title h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 500;
+    line-height: .95;
+}
+
+.contacts-info-title h2 i {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+}
+
+
+.contacts-info-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contacts-info-item {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 20px;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid rgba(40, 85, 45, .15);
+}
+
+.contacts-info-item span {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    opacity: .5;
+}
+
+.contacts-info-item p {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+
+/* ========================================
+   CTA
+======================================== */
+
+.contacts-cta {
+    margin: 70px 0 100px;
+    padding: 90px 40px;
+
+    text-align: center;
+
+    background: #285d2d;
+    color: #f4f2df;
+
+    border-radius: 25px;
+}
+
+.contacts-cta .contacts-label {
+    opacity: .6;
+}
+
+.contacts-cta h2 {
+    margin: 0 0 40px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(45px, 6vw, 75px);
+    font-weight: 500;
+    line-height: .9;
+}
+
+.contacts-cta h2 i {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+}
+
+
+/* BUTTON */
+
+.contacts-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 15px 24px;
+
+    border: 1px solid rgba(244, 242, 223, .7);
+
+    color: #f4f2df;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    transition: background .3s ease, color .3s ease;
+}
+
+.contacts-button:hover {
+    background: #f4f2df;
+    color: #285d2d;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.contacts-footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+
+    gap: 30px;
+
+    padding: 40px;
+
+    border-top: 1px solid rgba(40, 85, 45, .2);
+}
+
+.contacts-footer .logo {
+    color: #28552d;
+    text-decoration: none;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+.contacts-footer p {
+    margin: 7px 0 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+}
+
+.contacts-footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.contacts-footer-links a {
+    color: #28552d;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contacts-footer > p {
+    text-align: right;
+    opacity: .6;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .contacts-main {
+        padding: 50px 20px 0;
+    }
+
+    .contacts-intro {
+        padding: 50px 0 60px;
+    }
+
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 70px;
+    }
+
+    .contact-card {
+        min-height: 220px;
+        padding: 25px;
+    }
+
+    .contacts-info {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 60px 0;
+    }
+
+    .contacts-cta {
+        margin: 50px 0 70px;
+        padding: 65px 20px;
+    }
+
+    .contacts-footer {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .contacts-footer > p {
+        text-align: left;
+    }
+
+    .contacts-footer-links {
+        margin-top: 15px;
+    }
+
+}
