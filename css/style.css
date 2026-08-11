@@ -154,3 +154,431 @@ img{max-width:100%}
   .lightbox{padding:15px}.lightbox img{max-width:95vw;max-height:85vh}
   .lightbox-arrow.prev{left:8px}.lightbox-arrow.next{right:8px}
 }
+
+/* =========================================================
+   PHOTO IN YOU — ABOUT PAGE / BOTANICAL EDITORIAL STYLE
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&family=Marck+Script&display=swap');
+
+.about-page{
+    --about-green:#294f2b;
+    --about-green-dark:#214423;
+    --about-cream:#f8f8dc;
+    --about-paper:#f4f3d6;
+    --about-ink:#314b2e;
+    --about-script:'Marck Script',cursive;
+    background:var(--about-cream);
+    color:var(--about-ink);
+}
+
+.about-page .header.solid{
+    background:rgba(248,248,220,.96);
+    color:var(--about-green);
+    border-bottom:1px solid rgba(41,79,43,.10);
+}
+
+.about-story{
+    position:relative;
+    min-height:760px;
+    margin-top:86px;
+    display:grid;
+    grid-template-columns:38% 62%;
+    background:var(--about-green);
+    color:#f8f5df;
+    overflow:hidden;
+}
+
+.about-story-photo{
+    min-height:760px;
+    background:#223b24;
+    overflow:hidden;
+}
+
+.about-story-photo img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.about-story-content{
+    position:relative;
+    z-index:2;
+    max-width:720px;
+    padding:72px 8vw 82px 44px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.about-script-title{
+    font-family:var(--about-script);
+    font-size:clamp(48px,5.2vw,78px);
+    line-height:.95;
+    font-weight:400;
+    margin:0 0 30px;
+}
+
+.about-script-title.dark{color:var(--about-ink)}
+
+.about-story-content p:not(.about-script-title){
+    max-width:690px;
+    font-family:var(--serif);
+    font-size:clamp(20px,1.65vw,27px);
+    line-height:1.24;
+    margin:0 0 25px;
+    color:#f4f0d8;
+}
+
+.about-green-button,
+.about-outline-button{
+    display:inline-flex;
+    align-items:center;
+    gap:22px;
+    width:max-content;
+    padding:14px 20px;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:.13em;
+    transition:.3s ease;
+}
+
+.about-green-button{
+    margin-top:8px;
+    border:1px solid rgba(248,245,223,.7);
+    color:#f8f5df;
+}
+
+.about-green-button:hover{
+    background:#f8f5df;
+    color:var(--about-green);
+}
+
+.about-green-button span,
+.about-outline-button span{font-size:16px;line-height:0}
+
+.about-flower{
+    position:absolute;
+    z-index:1;
+    font-family:Georgia,serif;
+    color:#d7a68d;
+    opacity:.8;
+    pointer-events:none;
+}
+
+.about-flower-top{
+    right:32px;
+    bottom:20px;
+    font-size:155px;
+    transform:rotate(-15deg);
+    text-shadow:22px 25px 0 rgba(218,178,154,.55),-28px 14px 0 rgba(164,111,88,.42);
+}
+
+.about-faq{
+    position:relative;
+    padding:85px 7vw 120px;
+    background:var(--about-cream);
+    overflow:hidden;
+}
+
+.about-faq-heading{
+    margin-bottom:58px;
+}
+
+.about-faq-heading .about-script-title{
+    display:inline-block;
+    padding:7px 30px 12px 8px;
+    background:rgba(219,224,157,.60);
+    border-radius:0 35px 35px 0;
+    font-size:clamp(38px,4.4vw,66px);
+}
+
+.about-faq-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);
+    gap:7vw;
+    align-items:center;
+}
+
+.faq-list{max-width:760px}
+
+.faq-item{
+    padding:0 0 28px;
+    margin:0 0 26px;
+    border-bottom:1px solid rgba(49,75,46,.18);
+}
+
+.faq-item:last-child{margin-bottom:0}
+
+.faq-item h2{
+    font-family:var(--about-script);
+    font-size:clamp(29px,2.5vw,42px);
+    line-height:1.05;
+    font-weight:400;
+    margin-bottom:12px;
+}
+
+.faq-item p{
+    max-width:620px;
+    font-family:var(--serif);
+    font-size:20px;
+    line-height:1.25;
+}
+
+.about-round-photo{
+    position:relative;
+    width:min(100%,500px);
+    aspect-ratio:1;
+    justify-self:center;
+    border-radius:50%;
+    padding:15px;
+    background:#bdc97d;
+    border:1px solid #617347;
+    box-shadow:0 0 0 10px rgba(189,201,125,.14);
+}
+
+.about-round-photo::before{
+    content:"";
+    position:absolute;
+    inset:7px;
+    border:1px solid rgba(49,75,46,.55);
+    border-radius:50%;
+    pointer-events:none;
+    z-index:2;
+}
+
+.about-round-photo img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.round-leaf{
+    position:absolute;
+    font-family:Georgia,serif;
+    color:#5b6338;
+    z-index:3;
+    font-size:85px;
+    line-height:1;
+}
+
+.leaf-one{right:-40px;bottom:22px;transform:rotate(-28deg)}
+.leaf-two{right:-13px;bottom:-30px;transform:rotate(18deg);font-size:70px}
+
+.about-flower-bottom{
+    left:-20px;
+    bottom:-65px;
+    font-size:170px;
+    color:#d79b9c;
+    opacity:.55;
+    transform:rotate(12deg);
+}
+
+.about-note{
+    padding:110px 7vw 125px;
+    background:#e5e6bd;
+    text-align:center;
+}
+
+.about-note .about-script-title{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about-note h2{
+    font-family:var(--serif);
+    font-size:clamp(55px,7vw,105px);
+    font-weight:400;
+    line-height:.88;
+    margin-bottom:35px;
+}
+
+.about-note h2 i{font-style:italic}
+
+.about-outline-button{
+    border:1px solid var(--about-ink);
+    color:var(--about-ink);
+}
+
+.about-outline-button:hover{
+    background:var(--about-ink);
+    color:var(--about-cream);
+}
+
+.about-page .footer{
+    background:#30452d;
+}
+
+@media(max-width:850px){
+    .about-story{
+        margin-top:74px;
+        min-height:0;
+        grid-template-columns:1fr;
+    }
+
+    .about-story-photo{
+        min-height:520px;
+        max-height:70vh;
+    }
+
+    .about-story-content{
+        padding:55px 7vw 70px;
+    }
+
+    .about-script-title{font-size:52px}
+
+    .about-story-content p:not(.about-script-title){
+        font-size:21px;
+    }
+
+    .about-faq-grid{
+        grid-template-columns:1fr;
+        gap:65px;
+    }
+
+    .about-round-photo{
+        width:min(78vw,430px);
+    }
+}
+
+@media(max-width:520px){
+    .about-story-photo{
+        min-height:430px;
+    }
+
+    .about-story-content{
+        padding:45px 6vw 60px;
+    }
+
+    .about-script-title{font-size:43px}
+
+    .about-story-content p:not(.about-script-title){
+        font-size:19px;
+        line-height:1.28;
+    }
+
+    .about-green-button{font-size:9px}
+
+    .about-faq{
+        padding:65px 6vw 90px;
+    }
+
+    .about-faq-heading .about-script-title{
+        font-size:35px;
+        padding-right:20px;
+    }
+
+    .faq-item h2{font-size:30px}
+    .faq-item p{font-size:18px}
+
+    .about-round-photo{
+        width:78vw;
+        padding:10px;
+    }
+
+    .round-leaf{font-size:65px}
+    .leaf-one{right:-28px}.leaf-two{right:-8px}
+
+    .about-note{padding:80px 6vw 95px}
+    .about-note .about-script-title{font-size:34px}
+    .about-note h2{font-size:58px}
+}
+
+/* =========================================
+   DECORATIVE BOOKING
+========================================= */
+.booking-decorative{
+    position:relative;
+    overflow:hidden;
+    padding:150px 7vw 110px;
+    background:#f7f3d9;
+}
+.booking-decorative:before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:radial-gradient(circle at 85% 12%,rgba(205,139,130,.12),transparent 22%),radial-gradient(circle at 8% 72%,rgba(105,112,91,.12),transparent 25%);
+}
+.booking-intro{position:relative;max-width:820px;margin:0 auto 65px;text-align:center}
+.booking-intro h1{font-family:var(--serif);font-size:clamp(58px,7vw,100px);font-weight:400;line-height:.86;color:var(--forest)}
+.booking-intro h1 i{font-style:italic;color:#8b6258}
+.booking-intro-text{max-width:570px;margin:30px auto 0;color:#69705b;font-family:var(--serif);font-size:21px;line-height:1.35}
+.booking-flower,.booking-leaf,.booking-paper-flower,.booking-note-flower{font-family:Georgia,serif;color:#8c6259;line-height:1}
+.booking-flower{position:absolute;left:3vw;top:180px;font-size:95px;transform:rotate(-15deg);opacity:.75}
+.booking-leaf{position:absolute;right:4vw;top:115px;font-size:110px;color:#69705b;transform:rotate(20deg);opacity:.55}
+.booking-paper{position:relative;max-width:1050px;margin:auto;background:#fffdf1;border:1px solid rgba(38,56,47,.16);padding:55px 6vw 50px;box-shadow:0 20px 60px rgba(38,56,47,.08)}
+.booking-paper:before{content:"";position:absolute;inset:12px;border:1px solid rgba(139,98,88,.16);pointer-events:none}
+.booking-paper-flower{position:absolute;right:25px;top:20px;font-size:65px;opacity:.65}
+.booking-form-head{display:flex;align-items:center;gap:18px;margin-bottom:40px;color:var(--forest);position:relative}
+.booking-form-head span{font-family:var(--serif);font-size:28px;color:#8b6258}
+.booking-form-head p{font-size:9px;letter-spacing:.18em}
+.booking-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 45px;position:relative}
+.booking-field-wide{grid-column:1 / -1}
+.booking-field label{font-family:var(--serif);font-size:20px;color:var(--forest);text-transform:none;letter-spacing:0}
+.booking-field input,.booking-field textarea,.booking-field select{border-bottom:1px solid rgba(38,56,47,.25);font-size:14px;padding:9px 0;background:transparent}
+.booking-field input::placeholder,.booking-field textarea::placeholder{color:#aaa99e}
+.booking-field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--forest) 50%),linear-gradient(135deg,var(--forest) 50%,transparent 50%);background-position:calc(100% - 8px) 55%,calc(100% - 3px) 55%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:25px}
+.booking-bottom{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-top:42px;position:relative}
+.booking-bottom p{max-width:390px;color:#8a8a7e;font-size:11px;line-height:1.55}
+.booking-submit{border:1px solid var(--forest);background:var(--forest);color:var(--cream);padding:15px 24px;font-size:9px;text-transform:uppercase;letter-spacing:.12em;transition:.3s}
+.booking-submit span{margin-left:25px;font-size:16px}
+.booking-submit:hover{background:#8b6258;border-color:#8b6258}
+.booking-note{position:relative;max-width:1050px;margin:70px auto 0;padding:35px 45px;display:grid;grid-template-columns:55px 1fr 100px;align-items:center;background:#294f2b;color:#f7f3d9}
+.booking-note>span{font-family:var(--serif);font-size:27px;color:#d5b5a7}
+.booking-note .small-title{color:#e4dfc6;margin-bottom:8px}
+.booking-note h2{font-family:var(--serif);font-weight:400;font-size:42px;line-height:.9}
+.booking-note h2 i{font-style:italic}
+.booking-note-flower{font-size:80px;text-align:right;color:#d2a59a;transform:rotate(12deg)}
+
+/* =========================================
+   DECORATIVE CONTACTS
+========================================= */
+.contact-section{background:#f7f3d9;min-height:75vh}
+.contact-decorative{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center;max-width:1100px;margin:auto;padding:50px 0}
+.contact-copy h1{font-family:var(--serif);font-size:clamp(58px,6vw,88px);font-weight:400;line-height:.85;color:var(--forest)}
+.contact-copy h1 i{font-style:italic;color:#8b6258}
+.contact-copy>p:not(.small-title){max-width:480px;margin:30px 0;color:#69705b;font-family:var(--serif);font-size:21px;line-height:1.3}
+.contact-flower{position:absolute;left:-70px;top:20px;font-family:Georgia,serif;font-size:110px;color:#d59a94;opacity:.5;transform:rotate(-15deg)}
+.contact-card{position:relative;background:#294f2b;color:#f7f3d9;padding:55px 50px;box-shadow:15px 15px 0 rgba(139,98,88,.12)}
+.contact-card-title{font-size:9px;letter-spacing:.18em;margin-bottom:25px;color:#d8d6b9}
+.contact-big-link{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid rgba(247,243,217,.25);font-family:var(--serif);font-size:32px}
+.contact-big-link span{font-family:var(--sans);font-size:18px}
+.contact-card .contact-row{border-color:rgba(247,243,217,.25);padding:17px 0;color:#f7f3d9}
+.contact-card .contact-row span:first-child{color:#c4c3a9}
+.contact-card .contact-row strong{font-weight:400}
+
+@media(max-width:850px){
+ .booking-decorative{padding:125px 6vw 80px}
+ .booking-flower{left:-15px;top:140px;font-size:65px}
+ .booking-leaf{right:-20px;top:90px;font-size:75px}
+ .booking-paper{padding:40px 7vw}
+ .booking-form-grid{grid-template-columns:1fr;gap:24px}
+ .booking-field-wide{grid-column:auto}
+ .booking-bottom{display:block}
+ .booking-submit{margin-top:25px}
+ .booking-note{grid-template-columns:35px 1fr 60px;padding:28px 25px}
+ .booking-note h2{font-size:32px}
+ .booking-note-flower{font-size:55px}
+ .contact-decorative{grid-template-columns:1fr;gap:60px;padding-top:30px}
+ .contact-flower{left:-25px;top:-20px;font-size:75px}
+ .contact-card{padding:40px 30px}
+}
+@media(max-width:520px){
+ .booking-intro h1{font-size:50px}
+ .booking-intro-text{font-size:18px}
+ .booking-paper{padding:32px 22px}
+ .booking-paper:before{inset:8px}
+ .booking-paper-flower{font-size:45px;right:12px}
+ .booking-field label{font-size:18px}
+ .booking-bottom p{font-size:10px}
+ .booking-note{grid-template-columns:1fr;padding:25px}
+ .booking-note>span{margin-bottom:12px}
+ .booking-note-flower{text-align:left;margin-top:20px}
+ .contact-copy h1{font-size:52px}
+ .contact-copy>p:not(.small-title){font-size:18px}
+ .contact-big-link{font-size:27px}
+}
