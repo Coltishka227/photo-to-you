@@ -5840,3 +5840,219 @@ img{max-width:100%}
         font-size: 14px;
     }
 }
+
+/* =========================================
+   PORTFOLIO — КОМПАКТНЫЙ ДИЗАЙН
+   ========================================= */
+
+.portfolio-page {
+    background: #eef6d9;
+    color: #315a35;
+}
+
+
+/* Заголовок */
+
+.portfolio-heading {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 25px 35px;
+    text-align: center;
+}
+
+.portfolio-heading .portfolio-script {
+    margin: 0 0 5px;
+
+    font-family: "Marck Script", cursive;
+    font-size: 30px;
+
+    color: #315a35;
+}
+
+.portfolio-heading h1 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: 500;
+
+    color: #315a35;
+}
+
+.portfolio-heading > p:last-child {
+    max-width: 500px;
+    margin: 10px auto 0;
+
+    font-size: 17px;
+    line-height: 1.5;
+
+    color: #547052;
+}
+
+
+/* =========================================
+   ФОТОГАЛЕРЕЯ
+   ========================================= */
+
+.portfolio-gallery {
+    width: min(1200px, calc(100% - 50px));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* Одна фотография */
+
+.portfolio-photo {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #dcebbd;
+
+    box-shadow:
+        0 8px 25px rgba(49, 90, 53, 0.08);
+
+    cursor: pointer;
+}
+
+
+/* Изображение */
+
+.portfolio-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+
+/* Небольшой эффект */
+
+.portfolio-photo:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   НИЗ СТРАНИЦЫ
+   ========================================= */
+
+.portfolio-bottom {
+    text-align: center;
+
+    padding: 55px 20px 70px;
+}
+
+.portfolio-bottom .portfolio-script {
+    margin: 0 0 20px;
+
+    font-family: "Marck Script", cursive;
+    font-size: 27px;
+
+    color: #315a35;
+}
+
+
+.portfolio-button {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 15px;
+
+    padding: 13px 23px;
+
+    border: 1px solid #315a35;
+    border-radius: 30px;
+
+    color: #315a35;
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+
+.portfolio-button span {
+    font-size: 18px;
+}
+
+
+.portfolio-button:hover {
+    background: #315a35;
+    color: #eef6d9;
+}
+
+
+/* =========================================
+   ПЛАНШЕТ
+   ========================================= */
+
+@media (max-width: 950px) {
+
+    .portfolio-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================
+   ТЕЛЕФОН
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .portfolio-heading {
+        padding: 45px 20px 25px;
+    }
+
+    .portfolio-heading .portfolio-script {
+        font-size: 25px;
+    }
+
+    .portfolio-heading h1 {
+        font-size: 42px;
+    }
+
+    .portfolio-heading > p:last-child {
+        font-size: 15px;
+    }
+
+
+    .portfolio-gallery {
+        width: calc(100% - 30px);
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .portfolio-photo {
+        border-radius: 12px;
+    }
+
+
+    .portfolio-bottom {
+        padding: 40px 15px 50px;
+    }
+
+}
