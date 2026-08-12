@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Отзывы клиентов PHOTO IN YOU — Вика, фотограф."
+        content="Портфолио Вики — фотографа PHOTO IN YOU."
     >
 
-    <title>Отзывы — PHOTO IN YOU</title>
+    <meta
+        name="theme-color"
+        content="#eef6d9"
+    >
+
+    <title>Портфолио — PHOTO IN YOU</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,7 +32,11 @@
     >
 </head>
 
-<body class="reviews-page">
+
+<body class="portfolio-page">
+
+
+<!-- ================= HEADER ================= -->
 
 <header class="site-header">
 
@@ -31,89 +45,309 @@
     </a>
 
     <nav class="navigation">
-        <a href="index.html">Главная</a>
-        <a href="portfolio.html">Портфолио</a>
-        <a href="about.html">Обо мне</a>
-        <a href="services.html">Услуги</a>
-        <a href="booking.html">Запись</a>
-        <a href="reviews.html" class="active">Отзывы</a>
-        <a href="contacts.html">Контакты</a>
+
+        <a href="index.html">
+            Главная
+        </a>
+
+        <a href="portfolio.html" class="active">
+            Портфолио
+        </a>
+
+        <a href="about.html">
+            Обо мне
+        </a>
+
+        <a href="services.html">
+            Услуги
+        </a>
+
+        <a href="booking.html">
+            Запись
+        </a>
+
+        <a href="reviews.html">
+            Отзывы
+        </a>
+
+        <a href="contacts.html">
+            Контакты
+        </a>
+
     </nav>
+
+    <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+    </button>
 
 </header>
 
 
-<main class="reviews-main">
+<!-- ================= MAIN ================= -->
 
-    <section class="reviews-heading">
+<main class="portfolio-main">
 
-        <p class="reviews-small-title">
-            PHOTO IN YOU / ОТЗЫВЫ
+
+    <!-- ===== TITLE ===== -->
+
+    <section class="portfolio-heading">
+
+        <p class="portfolio-script">
+            PHOTO IN YOU
         </p>
 
         <h1>
-            Слова,<br>
-            <i>которые остаются.</i>
+            Портфолио
         </h1>
 
-        <p class="reviews-subtitle">
-            Настоящие впечатления людей после съёмки.
+        <p>
+            Здесь собраны мои любимые работы
+            с разных съёмок.
         </p>
 
     </section>
 
 
-    <section class="reviews-grid">
+    <!-- ================= GALLERY ================= -->
 
-        <article class="review-card">
+    <section class="portfolio-gallery">
 
-            <div class="review-photo">
 
-                <img
-                    src="images/reviews/review-01.jpg"
-                    alt="Отзыв клиента о фотосессии"
-                >
+        <div class="portfolio-photo">
+            <img src="images/portfolio/01.jpg" alt="Фотография 01" loading="lazy">
+        </div>
 
-            </div>
+        <div class="portfolio-photo">
+            <img src="images/portfolio/02.jpg" alt="Фотография 02" loading="lazy">
+        </div>
 
-            <div class="review-content">
+        <div class="portfolio-photo">
+            <img src="images/portfolio/03.jpg" alt="Фотография 03" loading="lazy">
+        </div>
 
-                <div class="review-mark">
-                    “
-                </div>
+        <div class="portfolio-photo">
+            <img src="images/portfolio/04.jpg" alt="Фотография 04" loading="lazy">
+        </div>
 
-                <p class="review-text">
-                    Бля, Вика, спасибо тебе огромное за фотки.
-                    Я просто теку с этих фоток.
-                    Меня никогда никто так не фоткал
-                </p>
+        <div class="portfolio-photo">
+            <img src="images/portfolio/05.jpg" alt="Фотография 05" loading="lazy">
+        </div>
 
-                <div class="review-bottom">
+        <div class="portfolio-photo">
+            <img src="images/portfolio/06.jpg" alt="Фотография 06" loading="lazy">
+        </div>
 
-                    <span>
-                        Отзыв клиента
-                    </span>
+        <div class="portfolio-photo">
+            <img src="images/portfolio/07.jpg" alt="Фотография 07" loading="lazy">
+        </div>
 
-                    <span>
-                        PHOTO IN YOU
-                    </span>
+        <div class="portfolio-photo">
+            <img src="images/portfolio/08.jpg" alt="Фотография 08" loading="lazy">
+        </div>
 
-                </div>
+        <div class="portfolio-photo">
+            <img src="images/portfolio/09.jpg" alt="Фотография 09" loading="lazy">
+        </div>
 
-            </div>
+        <div class="portfolio-photo">
+            <img src="images/portfolio/10.jpg" alt="Фотография 10" loading="lazy">
+        </div>
 
-        </article>
+        <div class="portfolio-photo">
+            <img src="images/portfolio/11.jpg" alt="Фотография 11" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/12.jpg" alt="Фотография 12" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/13.jpg" alt="Фотография 13" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/14.jpg" alt="Фотография 14" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/15.jpg" alt="Фотография 15" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/16.jpg" alt="Фотография 16" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/17.jpg" alt="Фотография 17" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/18.jpg" alt="Фотография 18" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/19.jpg" alt="Фотография 19" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/20.jpg" alt="Фотография 20" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/21.jpg" alt="Фотография 21" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/22.jpg" alt="Фотография 22" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/23.jpg" alt="Фотография 23" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/24.jpg" alt="Фотография 24" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/25.jpg" alt="Фотография 25" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/26.jpg" alt="Фотография 26" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/27.jpg" alt="Фотография 27" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/28.jpg" alt="Фотография 28" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/29.jpg" alt="Фотография 29" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/30.jpg" alt="Фотография 30" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/31.jpg" alt="Фотография 31" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/32.jpg" alt="Фотография 32" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/33.jpg" alt="Фотография 33" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/34.jpg" alt="Фотография 34" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/35.jpg" alt="Фотография 35" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/36.jpg" alt="Фотография 36" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/37.jpg" alt="Фотография 37" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/38.jpg" alt="Фотография 38" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/39.jpg" alt="Фотография 39" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/40.jpg" alt="Фотография 40" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/41.jpg" alt="Фотография 41" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/42.jpg" alt="Фотография 42" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/43.jpg" alt="Фотография 43" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/44.jpg" alt="Фотография 44" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/45.jpg" alt="Фотография 45" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/46.jpg" alt="Фотография 46" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/47.jpg" alt="Фотография 47" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/48.jpg" alt="Фотография 48" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/49.jpg" alt="Фотография 49" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/50.jpg" alt="Фотография 50" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/51.jpg" alt="Фотография 51" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/52.jpg" alt="Фотография 52" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/53.jpg" alt="Фотография 53" loading="lazy">
+        </div>
+
+        <div class="portfolio-photo">
+            <img src="images/portfolio/54.jpg" alt="Фотография 54" loading="lazy">
+        </div>
+
 
     </section>
 
 
-    <section class="reviews-final">
+    <!-- ===== BOTTOM ===== -->
 
-        <p class="reviews-script">
-            Ваша история может быть следующей
+    <section class="portfolio-bottom">
+
+        <p class="portfolio-script">
+            Каждая фотография — маленькая история.
         </p>
 
-        <a href="booking.html" class="reviews-button">
+        <a href="booking.html" class="portfolio-button">
             Записаться на съёмку
             <span>↗</span>
         </a>
@@ -123,9 +357,12 @@
 </main>
 
 
+<!-- ================= FOOTER ================= -->
+
 <footer class="site-footer">
 
     <div>
+
         <a href="index.html" class="logo">
             PHOTO <span>IN</span> YOU
         </a>
@@ -133,7 +370,9 @@
         <p>
             Vika — photographer
         </p>
+
     </div>
+
 
     <div class="footer-links">
 
@@ -155,12 +394,15 @@
 
     </div>
 
+
     <p>
         © 2026 PHOTO IN YOU
     </p>
 
 </footer>
 
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
